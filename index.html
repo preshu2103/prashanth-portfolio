@@ -2045,6 +2045,7 @@
        JAVASCRIPT
   ============================================================ -->
   <script>
+    const BACKEND_URL = "https://prashanth-portfolio-backend-17vv.onrender.com";
     /* ── Theme Toggle ─────────────────────────────────────────── */
     const html = document.documentElement;
     const themeBtn = document.getElementById('themeToggle');
@@ -2168,8 +2169,7 @@
       try {
         // POST to backend API
         // NOTE: Change this URL to your deployed backend URL
-        const BACKEND_URL = 'http://localhost:5000';
-
+        const BACKEND_URL = "https://prashanth-portfolio-backend-17vv.onrender.com";
         const res = await fetch(`${BACKEND_URL}/api/contact`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
